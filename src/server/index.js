@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 app.use(express.static(publicPath));
 
 app.get('*', (req, res) => {
-    res.sendFile(path.join(publicPath, 'index.js'));
+    res.sendFile(path.join(publicPath, 'index.html'));
 
     
  });
